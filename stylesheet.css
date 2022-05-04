@@ -1,271 +1,161 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+	margin: 0;
+	font-family: "Hiragino Kaku Gothic ProN";
 }
 
 a {
-  text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
 }
 
 .container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+header{
+	z-index: 10;
+	height: 64px;
+	/* position: absolute; */
+	background-color: rgb(127,186,202);
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	margin: auto;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+ul {
+	overflow:hidden;
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 20;
+}
+	
+ul li {
+	display: inline-block;
+	padding: 5px
+}
+.btn4{
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	display:inline-block;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
+.btn2{
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	display:inline-block;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
+/* トップ画像 */
+.top_img{
+	text-align: center;
+	margin: 25px 0px;
 }
 
-.btn-wrapper {
-  text-align: center;
+.top_img img{
+	width: 250px;
+	height: 250px;
+}
+/* アバウト */
+.about{
+	text-align: center;
+	font-size: 12px;
+	padding: 0 50px;
 }
 
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
+/* ニュースリスト */
+.newslist {
+	max-width: 500px;
+	margin: 0 auto;
+  }
+   
+  @media screen and (max-width: 800px) {
+	.newslist {
+	  font-size: 12px;
+	  padding: 0 15px;
+	}
+  }
+   
+  .newslist li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+		-ms-flex-align: start;
+			align-items: flex-start;
+	padding: 20px 10px;
+	border-top: 2px solid black;
+	line-height: 1.5;
+  }
+   
+  .newslist li:last-child {
+	border-bottom: 2px solid black;
+  }
+   
+  .newslist li time {
+	padding-right: 20px;
+  }
+   
+  .newslist li a {
+	color: cornflowerblue;
+	text-decoration: none;
   }
 
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
+  /* チョコ */
+  @import url(https://fonts.googleapis.com/css?family=Lobster);
+.choco {/* 要素自体の設定 */
+	box-sizing: border-box;
+	position: relative;
+	z-index: 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100px;
+	min-height: 56px;
+	border-radius: 4px;
+	border: solid 8px;
+	border-color: #804535 #3c1a11 #2c100a #6a3b2b;
+	background-color: #6f3c2f;
+	color: #6a3a2d;
+	text-shadow: 0 1px rgba(255,255,255,0.3), 0 -1px rgba(0,0,0,0.4);
+	box-shadow: -1px 4px 8px rgba(0,0,0,0.3);
+	font-family: 'Lobster', serif;
+	font-size: 12px;
+	line-height: 1;
 }
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
+.choco::before ,
+.choco::after {/* 擬似要素共通設定 */
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	display: block;
+	border-style: solid;
+	pointer-events: none;
 }
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
+.choco::before {/* before(擬似要素) */
+	z-index: 1;
+	border-width: 6px;
+	border-color: #291617 #662e1f #99604c #65413b;
+	color: rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 4px inset;
+}
+.choco::after {/* after(擬似要素) */
+	z-index: 2;
+	margin: -3px;
+	border-radius: 4px;
+	border-width: 5px;
+	border-color: #985d4d #885041 #885041 #985d4d;
+	color: rgba(255,255,255,0.3);
+	box-shadow: -1px -1px 1.4px,-1px -1px 1.4px inset;
 }
