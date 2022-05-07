@@ -7,6 +7,18 @@ body {
 	font-family: "Hiragino Kaku Gothic ProN";
 }
 
+pre{
+	font-size: 14px;
+}
+img{
+	width: 100%;
+}
+.about{
+	text-align: center;
+	font-size: 12px;
+	padding: 0 50px;
+}
+
 a {
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
@@ -21,7 +33,7 @@ header{
 	z-index: 10;
 	height: 64px;
 	/* position: absolute; */
-	background-color: rgb(127,186,202);
+	background-color: rgb(224, 146, 146);
 	width: 100%;
 	text-align: center;
 	z-index: 2;
@@ -68,8 +80,8 @@ ul li {
 	width: 250px;
 	height: 250px;
 }
-/* アバウト */
-.about{
+/* 自己紹介 */
+.self_introduction{
 	text-align: center;
 	font-size: 12px;
 	padding: 0 50px;
