@@ -1,6 +1,6 @@
 .h1_title{
 	margin: 10px 20px;
-	font-family:"Comic Sans MS";
+	font-family:"Comic Sans MS", sans-serif;;
 	padding:10px 0px 0px 0px;
 	color:#333333;
 	background-image:url(img/head011_03.png);
@@ -19,7 +19,7 @@ table th {
 }
 /* クレヨン風 */
 .artist_under {
-	font-family:"Comic Sans MS";
+	font-family:"Comic Sans MS", sans-serif;;
 	height:30px;margin:0px 0px 5px 10px;padding:10px 0px 0px 0px;
 	font-size:24px;font-weight:bold;color:#333333;
 	background-image:url(img/head011_01.png);
@@ -28,7 +28,7 @@ table th {
 }
 
 .song_under {
-	font-family:"Comic Sans MS";
+	font-family:"Comic Sans MS", sans-serif;;
 	height:30px;margin:0px 0px 15px 50px;padding:5px 0px 0px 0px;
 	font-size:24px;font-weight:bold;color:#333333;
 	background-image:url(img/head011_02.png);
