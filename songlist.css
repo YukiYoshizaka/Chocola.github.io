@@ -20,22 +20,22 @@ table th {
 /* クレヨン風 */
 .artist_under {
 	font-family:"Comic Sans MS";
-	height:30px;margin:0px 0px 15px 50px;padding:5px 0px 0px 0px;
-	font-size:16px;font-weight:bold;color:#333333;
-	background-image:url(img/head011_02.png);
-	background-position:bottom;background-repeat:repeat-x;
+	height:30px;margin:0px 0px 5px 10px;padding:10px 0px 0px 0px;
+	font-size:24px;font-weight:bold;color:#333333;
+	background-image:url(img/head011_01.png);
+	background-position:bottom;background-repeat:repeat-x;	
+	
 }
 
 .song_under {
 	font-family:"Comic Sans MS";
-	height:30px;margin:0px 0px 5px 30px;padding:10px 0px 0px 0px;
-	font-size:20px;font-weight:bold;color:#333333;
-	background-image:url(img/head011_01.png);
-	background-position:bottom;background-repeat:repeat-x;	
+	height:30px;margin:0px 0px 15px 50px;padding:5px 0px 0px 0px;
+	font-size:24px;font-weight:bold;color:#333333;
+	background-image:url(img/head011_02.png);
+	background-position:bottom;background-repeat:repeat-x;
 }
 
 table td.song_artist{
-	border-bottom: 1px solid rgb(189, 189, 189);
 }
 table .tb_td{
 	margin: 5px 0px 5px 0px;

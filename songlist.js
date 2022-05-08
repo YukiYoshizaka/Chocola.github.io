@@ -17,11 +17,11 @@ request.onload = function () {
 	song_list = formating_DataArtist(data);
 	console.log(song_list);
 	for(var i = 0; i < song_list.length; i++){
-		$myList.append($('<tr><td class="song_artist"><div class="tb_td">'));
+		$myList.append($('<tr><td class="song_artist"><span class="artist_under">'+song_list[i].Artist+'</span>'));
 		for(var k = 0; k < song_list[i].Song.length; k++){
 			$myList.append($('<span class="song_under">'+song_list[i].Song[k]+'</span><br>'));
 		}
-		$myList.append($('<span class="artist_under">'+song_list[i].Artist+'</span></div></td><td></dt></tr>'));
+		$myList.append($('</td></tr>'));
 		$myList.hide().fadeIn(1500);
 	}
 }
