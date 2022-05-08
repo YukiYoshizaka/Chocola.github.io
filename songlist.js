@@ -40,6 +40,7 @@ function formating_DataArtist(data){
 	// artist_dataの重複削除
 	artist_data = new Set(artist_data);
 	artist_data = Array.from(artist_data);
+	artist_data = artist_data.sort();
 	console.log(artist_data);
 
 	for(var i = 0; i < artist_data.length; i++){
