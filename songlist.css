@@ -1,7 +1,6 @@
 .h1_title{
 	margin: 10px 20px;
 	font-family:"Comic Sans MS", sans-serif;;
-	padding:10px 0px 0px 0px;
 	color:#333333;
 	background-image:url(img/head011_03.png);
 	background-position:bottom;background-repeat:repeat-x;	
@@ -17,26 +16,46 @@ table th {
 	width: 40%;
 
 }
-/* クレヨン風 */
-.artist_under {
-	font-family:"Comic Sans MS", sans-serif;;
-	height:30px;margin:0px 0px 5px 10px;padding:10px 0px 0px 0px;
+.linklist{
+	margin: 15px 35px;
 	font-size:24px;font-weight:bold;color:#333333;
-	background-image:url(img/head011_01.png);
+}
+.linklist a{
+	font-weight:bold;color:#333333;
+}
+
+ul{
+	margin: 0px 15px;
+}
+ul#songlist li a{
+	font-family:"Comic Sans MS", sans-serif;
+	font-size:14px;font-weight:bold;color:#333333;
+	text-decoration: none;
 	background-position:bottom;background-repeat:repeat-x;	
+}
+/* 奇数行のスタイル */
+ul#songlist li:nth-child(odd){
+background-color:#FFC6C2;
+width: -webkit-fill-available;
+}
+
+/* 偶数行のスタイル */
+ul#songlist li:nth-child(even){
+background-color:#FFDBC9;
+width: -webkit-fill-available;
+}
+
+#songlist a {
+	color: #363636;
+}
+a:visited {
+	text-decoration: underline;
+	color: #36a7c7;
+	color: #7337C6;
+}
+
+#songlist a {
+	display: block;
+	padding: 12px 20px;
+}
 	
-}
-
-.song_under {
-	font-family:"Comic Sans MS", sans-serif;;
-	height:30px;margin:0px 0px 15px 50px;padding:5px 0px 0px 0px;
-	font-size:22px;font-weight:bold;color:#333333;
-	background-image:url(img/head011_02.png);
-	background-position:bottom;background-repeat:repeat-x;
-}
-
-table td.song_artist{
-}
-table .tb_td{
-	margin: 5px 0px 5px 0px;
-}
