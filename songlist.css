@@ -35,13 +35,13 @@ ul#songlist li a{
 }
 /* 奇数行のスタイル */
 ul#songlist li:nth-child(odd){
-background-color:#FFC6C2;
+background-color:#FFFDF4;
 width: -webkit-fill-available;
 }
 
 /* 偶数行のスタイル */
 ul#songlist li:nth-child(even){
-background-color:#FFDBC9;
+background-color:#FFFACD;
 width: -webkit-fill-available;
 }
 
